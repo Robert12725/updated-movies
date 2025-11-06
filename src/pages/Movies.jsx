@@ -54,11 +54,14 @@ export default function Movies() {
   };
 
   const handleClearHistory = () => {
-    // Using custom modal for confirmation instead of window.confirm()
-    // NOTE: This uses an internal component, replace with a proper modal if needed in a live environment
-    console.log("Confirm clear history logic needed here."); 
-    setHistory([]);
-    localStorage.removeItem("viewedMovies");
+    const isConfirmed = window.confirm(
+      "Are you sure you want to clear history?"
+    );
+
+    if (isConfirmed) {
+      setHistory([]);
+      localStorage.removeItem("viewedMovies");
+    }
   };
 
   if (loading) {
@@ -246,7 +249,7 @@ export default function Movies() {
                         View on IMDb
                         <Star className="w-3 h-3 xs:w-4 xs:h-4 ml-1 inline-block text-yellow-400 fill-yellow-400" />
                       </a>
-                    </div>
+                  </div>
                   </motion.div>
                 )
               ))}
