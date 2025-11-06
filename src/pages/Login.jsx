@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom"; 
-import { Mail, Lock } from "lucide-react"; // ⬅️ შესწორებული იმპორტი
+import { Mail, Lock } from "lucide-react"; 
 
-// იმპორტი თქვენი ახალი AuthContext.jsx ფაილიდან
 import { useAuth } from '../contexts/AuthContext'; 
 
 export default function Login() {
