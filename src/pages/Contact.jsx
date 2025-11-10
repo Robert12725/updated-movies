@@ -126,7 +126,7 @@ export default function Contact() {
                     <div>
                         <h4 className="font-semibold text-xl text-white">Call Us</h4>
                         <p className="text-gray-400">For partnership and media opportunities.</p>
-                        <p className="text-yellow-300 font-medium">+995 568 42 60 13</p>
+                        <p className="text-yellow-300 font-medium">032 222 333</p>
                     </div>
                 </motion.div>
 
@@ -152,7 +152,7 @@ export default function Contact() {
                 >
                     <h4 className="font-semibold text-xl text-white mb-3">Connect With Us</h4>
                     <div className="flex space-x-4">
-                        <SocialLink Icon={FaFacebookF} href="https://www.facebook.com/stories/1098103228539609/?source=profile_highlight" color="hover:text-blue-500" />
+                        <SocialLink Icon={FaFacebookF} href="facebook.com" color="hover:text-blue-500" />
                         <SocialLink Icon={FaTwitter} href="https://twitter.com" color="hover:text-cyan-400" />
                         <SocialLink Icon={FaInstagram} href="https://instagram.com" color="hover:text-pink-500" />
                         <SocialLink Icon={FaLinkedinIn} href="https://linkedin.com" color="hover:text-blue-700" />
